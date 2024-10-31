@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply custom-scrollbar-body;
+  }
+  .transisi {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .benefit_Amenities {
+    @apply px-3 py-2 border border-abuabu-35 bg-abuabu-10 rounded-md hover:bg-abuabu-20 hover:-translate-y-1 hover:shadow-sm hover:shadow-ijo-40 transisi;
+  }
+  .card_service {
+    @apply p-6 border border-abuabu-30 md:h-[450px] h-[390px] flex flex-col justify-between hover:-translate-y-2 hover:shadow-lg hover:shadow-ijo-40 transisi;
+  }
+  .card_dars {
+    @apply p-5 border-2 border-abuabu-35 flex flex-col gap-7 justify-between hover:-translate-y-2 transisi hover:shadow-lg hover:shadow-ijo-40;
+  }
+  .scale-y-100 {
+    transform: scaleY(1);
+  }
+
+  .scale-y-0 {
+    transform: scaleY(0);
+  }
+
+  /* start tailwind FAQ's */
+  .question {
+    @apply bg-abuabu-20 p-3 px-5 rounded-md flex flex-col gap-5 shadow-md;
+  }
+  .btn-quest {
+    @apply p-2 border-2 rounded-full hover:bg-[#00FF9C70] transition-all duration-200;
+  }
+  .garis {
+    @apply border-b border-b-ijo-40;
+  }
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
+
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease,
+      border-color 0.5s ease; /* Animasi pada shadow dan transformasi */
+    border-color: #d1d5db; /* Warna border awal */
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      255,
+      156,
+      0.2
+    ); /* Warna background dengan transparansi */
+    transition: top 0.5s ease; /* Transisi gerakan top */
+    z-index: 0;
+  }
+
+  .card:hover {
+    transform: translateY(-15px); /* Efek hover mengangkat card */
+    box-shadow: 0px 4px 20px rgba(0, 255, 156, 0.5); /* Shadow hijau saat di-hover */
+    border-color: #00ff9c; /* Mengubah border saat di-hover */
+  }
+
+  .card:hover::before {
+    top: 0; /* Background muncul dari bawah */
+  }
+
+  .card * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 156);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #000000;
+    padding: 5px;
+  }
+
+  .custom-scrollbar-body::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+  .custom-scrollbar-body::-webkit-scrollbar-thumb {
+    background-color: #00ff9c;
+    border-radius: 10px;
+  }
+  .custom-scrollbar-body::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+}

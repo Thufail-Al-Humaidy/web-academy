@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran El Academy</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="text-white font-barlow bg-abuabu-10">
+    <!-- navbar section -->
+    <header>
+      <nav
+        class="py-4 px-6 flex justify-between relative border-b border-abuabu-45 bg-abuabu-10"
+      >
+        <div class="flex items-center gap-3">
+          <div class="logo h-7 w-7 md:h-8 md:w-8">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <h4 class="md:text-xl text-[12px] font-semibold">
+            <span class="text-ijo-50">EL</span> ACADEMY
+          </h4>
+        </div>
+        <ul class="md:flex gap-2 items-center hidden">
+          <li class="py-[10px] px-[20px] bg-abuabu-15 rounded-md">
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="about.html">About Us</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="service.html">Services</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="partner.html">Partner</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="blog.html">Blog</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="bg-ijo-50 py-[12px] md:flex hidden px-[22px] rounded-xl hover:bg-ijo-40 transisi"
+        >
+          <a href="daftar.html" class="text-abuabu-15 font-semibold">Masuk | Daftar</a>
+        </button>
+        <!-- btn mobile / humburger -->
+        <button
+          id="menubtn"
+          class="p-[10px] bg-abuabu-15 rounded-md md:hidden hover:bg-abuabu-20 transisi"
+        >
+          <svg
+            class="h-6 w-6 fill-ijo-70"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6.75C3 6.33579 3 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <!-- navbar mobile -->
+        <aside
+          id="mobileMenu"
+          class="md:hidden absolute left-0 right-0 top-full text-white bg-abuabu-15 space-y-2 p-4 transform scale-y-0 origin-top transisi duration-700"
+        >
+          <ul class="flex flex-col text-center w-full gap-3">
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="about.html">About Us</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="service.html">Services</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="partner.html">Partner</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="bg-ijo-40 py-3 px-5 rounded-md hover:bg-ijo-60 transisi">
+              <a href="contact.html" class="text-abuabu-15 font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <!-- end navbar section -->
+    <!-- start form pendaftaran -->
+    <section class="flex justify-center items-center min-h-screen w-full">
+      <div class="container text-gray-300 shadow-xl rounded-lg p-8">
+        <h2 class="text-3xl font-bold text-center text-ijo-40 mb-8">
+          Formulir Pendaftaran EL Academy
+        </h2>
+        <form action="#" method="POST" class="space-y-6">
+          <!-- Informasi Pribadi -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                name="nama"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                required
+              />
+            </div>
+            <div class="md:col-span-2 grid grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-300"
+                  >Tempat Lahir</label
+                >
+                <input
+                  type="text"
+                  name="tempat_lahir"
+                  class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-300"
+                  >Tanggal Lahir</label
+                >
+                <input
+                  type="date"
+                  name="tanggal_lahir"
+                  class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Jenis Kelamin</label
+              >
+              <select
+                name="jenis_kelamin"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              >
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Nomor Telepon</label
+              >
+              <input
+                type="tel"
+                name="telepon"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-300"
+              >Alamat</label
+            >
+            <textarea
+              name="alamat"
+              rows="2"
+              class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+            ></textarea>
+          </div>
+
+          <!-- Informasi Akademik -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Pendidikan Terakhir</label
+              >
+              <select
+                name="pendidikan"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              >
+                <option>SD</option>
+                <option>SMP</option>
+                <option>SMA</option>
+                <option>Perguruan Tinggi</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Minat Studi</label
+              >
+              <select
+                name="minat_studi"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              >
+                <option>Aqidah</option>
+                <option>Fiqih</option>
+                <option>Tahsin & Tajwid</option>
+                <option>Tafsir Al-Quran</option>
+                <option>Hadits</option>
+                <option>Sirah Nabawiyah</option>
+                <option>Akhlaq</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Informasi Pembayaran -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Metode Pembayaran</label
+              >
+              <select
+                name="metode_pembayaran"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              >
+                <option>Transfer Bank</option>
+                <option>E-Wallet</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Nomor Rekening/E-Wallet</label
+              >
+              <input
+                type="text"
+                name="rekening"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+              />
+            </div>
+          </div>
+
+          <!-- Akun dan Keamanan -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Username</label
+              >
+              <input
+                type="text"
+                name="username"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Kata Sandi</label
+              >
+              <input
+                type="password"
+                name="password"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                required
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300"
+                >Konfirmasi Kata Sandi</label
+              >
+              <input
+                type="password"
+                name="confirm_password"
+                class="mt-1 w-full px-4 py-3 border border-abuabu-35 rounded-md bg-abuabu-15 focus:outline-none focus:ring-2 focus:ring-ijo-50"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Persetujuan -->
+          <div class="flex items-center">
+            <input
+              type="checkbox"
+              name="agree"
+              class="h-4 w-4 text-green-600 border-gray-500 rounded bg-gray-800 focus:ring-green-500"
+              required
+            />
+            <label class="ml-2 text-sm text-gray-300"
+              >Saya menyetujui syarat dan ketentuan</label
+            >
+          </div>
+
+          <!-- Tombol Daftar -->
+          <div class="mt-8">
+            <button
+              type="submit"
+              class="w-full bg-green-600 text-white py-3 rounded-md hover:bg-green-700 transition duration-150"
+            >
+              Daftar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Back to Home Button -->
+    <div class="container p-10">
+      <div class="mt-6">
+        <a
+          href="index.html"
+          class="text-sm font-medium text-white hover:text-black p-4 bg-green-600 rounded-md"
+        >
+          ← Back to Home
+        </a>
+      </div>
+
+      <!-- Link to Login Page -->
+      <div class="mt-6">
+        <p class="text-sm text-gray-200">
+          Sudah punya AKun?
+          <a href="login.html" class="font-medium text-ijo-60 hover:text-ijo-80"
+            >Sign in here</a
+          >.
+        </p>
+      </div>
+    </div>
+    <!-- end form pendaftaran -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

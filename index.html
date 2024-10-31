@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Academy</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body
+    class="text-white font-barlow bg-abuabu-10 custom-scrollbar-body"
+  >
+    <!-- navbar section -->
+    <header id="navbar">
+      <nav
+        class="py-4 px-6 flex justify-between relative border-b border-abuabu-45 bg-abuabu-10"
+      >
+        <div class="flex items-center gap-3">
+          <div class="logo h-7 w-7 md:h-8 md:w-8">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <h4 class="md:text-xl text-[12px] font-semibold">
+            <span class="text-ijo-50">EL</span> ACADEMY
+          </h4>
+        </div>
+        <ul class="md:flex gap-2 items-center hidden">
+          <li class="py-[10px] px-[20px] bg-abuabu-15 rounded-md">
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="about.html">About Us</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="service.html">Services</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="coursous.html">Coursous</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="partner.html">Partner</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="blog.html">Blog</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="bg-ijo-50 py-[12px] md:flex hidden px-[22px] rounded-xl hover:bg-ijo-40 transisi"
+        >
+          <a href="daftar.html" class="text-abuabu-15 font-semibold"
+            >Masuk | Daftar</a
+          >
+        </button>
+        <!-- btn mobile / humburger -->
+        <button
+          id="menubtn"
+          class="p-[10px] bg-abuabu-15 rounded-md md:hidden hover:bg-abuabu-20 transisi"
+        >
+          <svg
+            class="h-6 w-6 fill-ijo-70"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6.75C3 6.33579 3 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <!-- navbar mobile -->
+        <aside
+          id="mobileMenu"
+          class="md:hidden absolute left-0 right-0 top-full text-white bg-abuabu-15 space-y-2 p-4 transform scale-y-0 origin-top transisi duration-700"
+        >
+          <ul class="flex flex-col text-center w-full gap-3">
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="about.html">About Us</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="service.html">Services</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="coursous.html">Coursous</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="partner.html">Partner</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="bg-ijo-40 py-3 px-5 rounded-md hover:bg-ijo-60 transisi">
+              <a href="contact.html" class="text-abuabu-15 font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <!-- end navbar section -->
+    <!-- home section -->
+    <section
+      style="background-image: url('img/bg-home.png')"
+      class="flex items-center md:h-[598px] h-[566px]"
+    >
+      <div class="container flex items-center flex-col p-5 gap-8 mx-auto">
+        <div class="md:w-2/3">
+          <h1
+            class="md:text-[50px] mx-auto text-[30px] font-semibold text-center"
+          >
+            Mendalami Ilmu Islam Mencapai Ketakwaan
+          </h1>
+        </div>
+        <div
+          class="slogan text-center px-8 py-6 bg-[#24242465] rounded-md border border-abuabu-30 shadow-xl"
+        >
+          <p class="text-ijo-80">
+            Barang siapa
+            <span
+              class="px-[10px] py-2 bg-abuabu-30 rounded-md hidden md:inline-block"
+              >menempuh</span
+            ><span class="md:hidden">menempuh</span>
+            suatu jalan untuk
+            <span
+              class="px-[10px] py-2 bg-abuabu-30 rounded-md hidden md:inline-block"
+              >menuntut ilmu</span
+            ><span class="md:hidden">menuntut ilmu</span>, maka Allah akan
+            <span
+              class="px-[10px] py-2 bg-abuabu-30 rounded-md hidden md:inline-block"
+              >memudahkan</span
+            ><span class="md:hidden">memudahkan</span>
+            baginya
+            <span
+              class="px-[10px] py-2 bg-abuabu-30 rounded-md hidden md:inline-block"
+              >jalan ke surga</span
+            >
+            <span class="md:hidden">jalan ke surga</span>.
+          </p>
+        </div>
+
+        <div class="flex gap-5 md:gap-8">
+          <button
+            class="bg-abuabu-20 border border-abuabu-35 w-[120px] h-[50px] rounded-xl group hover:bg-ijo-40 transisi"
+          >
+            <a
+              href="login.html"
+              class="font-semibold group-hover:text-abuabu-15 transisi"
+              >Masuk</a
+            >
+          </button>
+          <button
+            class="bg-ijo-50 w-[120px] h-[50px] rounded-xl group hover:bg-abuabu-20 transisi"
+          >
+            <a
+              href="daftar.html"
+              class="text-abuabu-15 group-hover:text-white transisi font-semibold"
+              >Daftar</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end home section -->
+    <section>
+      <div class="container flex mx-auto items-center flex-col p-3">
+        <div
+          class="px-6 py-4 bg-abuabu-15 rounded-full border border-abuabu-30 -translate-y-12 shadow-sm hover:shadow-lg hover:shadow-ijo-60 hover:-translate-y-14 transisi shadow-ijo-70 text-sm md:text-base z-10"
+        >
+          <p>Trusted By 250+ Companies</p>
+        </div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-6 -translate-y-16 border border-abuabu-30"
+        >
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-abuabu-15 border md:border-none border-abuabu-30 hover:bg-abuabu-30 transisi px-6 py-6 group"
+          >
+            <img
+              src="img/annakhil.png"
+              class="group-hover:scale-105 transisi"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="h-[150px] md:h-[200px] flex flex-col w-full"
+          style="background-image: url(img/Text\ Container.png)"
+        >
+          <div class="my-auto">
+            <h2 class="text-testi-title font-semibold text-center">
+              OUR PROFILE
+            </h2>
+            <p class="text-center text-sm">
+              Tingkatkan pemahaman Islami Anda dengan solusi pembelajaran
+              inovatif kami menuju ketakwaan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- start profile -->
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="container flex mx-auto items-center flex-col p-3"
+      >
+        <div
+          class="bg-abuabu-15 p-3 md:p-10 flex md:flex-row flex-col gap-5 items-center justify-between"
+        >
+          <div
+            class="sub-container flex flex-col items-center text-center md:text-start md:items-start md:w-1/2 gap-10"
+          >
+            <div class="judul space-y-7">
+              <h1 class="md:text-section-title text-2xl font-semibold">
+                Mengenal lebih dalam EL Academy
+              </h1>
+              <p class="text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                iusto alias libero minima ea, molestiae dicta velit distinctio
+                consequuntur voluptate perspiciatis corrupti corporis
+                necessitatibus totam vero cum fuga amet. Tenetur.
+              </p>
+            </div>
+            <div class="flex flex-col gap-5">
+              <p class="font-semibold">
+                Join Us Today and Get Your First Week Free!
+              </p>
+              <div class="btn flex gap-5 md:gap-8">
+                <button
+                  class="bg-abuabu-20 border border-abuabu-35 w-[130px] h-[50px] rounded-xl group hover:bg-ijo-40 transisi"
+                >
+                  <a
+                    href=""
+                    class="font-semibold group-hover:text-abuabu-15 transisi"
+                    >Masuk</a
+                  >
+                </button>
+                <button
+                  class="bg-ijo-50 w-[130px] h-[50px] rounded-xl group hover:bg-abuabu-20 transisi"
+                >
+                  <a
+                    href=""
+                    class="text-abuabu-15 group-hover:text-white transisi font-semibold"
+                    >Daftar</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="w-full gap-7 flex flex-col">
+              <div class="benefit space-y-4">
+                <div class="icon-benefit flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 fill-ijo-40"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"
+                    ></path>
+                  </svg>
+                  <h5 class="font-semibold">Benefits</h5>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <p class="benefit_Amenities">Pembelajaran Terstruktur</p>
+                  <p class="benefit_Amenities">Akses 24/7</p>
+                  <p class="benefit_Amenities">Pengajar Berkompeten</p>
+                  <p class="benefit_Amenities">Bimbingan Pribadi</p>
+                  <p class="benefit_Amenities">Sertifikat Resmi</p>
+                </div>
+              </div>
+              <div class="benefit space-y-4">
+                <div class="icon-benefit flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 fill-ijo-40"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"
+                    ></path>
+                  </svg>
+                  <h5 class="font-semibold">Our Amenities</h5>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <p class="benefit_Amenities">Forum Diskusi Islami</p>
+                  <p class="benefit_Amenities">Live Webinar</p>
+                  <p class="benefit_Amenities">Materi Dapat Diunduh</p>
+                  <p class="benefit_Amenities">Progress Tracker</p>
+                  <p class="benefit_Amenities">Aplikasi Mobile</p>
+                  <p class="benefit_Amenities">Forum Q&A</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sub-container p-5 border border-ijo-50 rounded-xl w-full md:w-1/2"
+          >
+            <div class="img-profile grid grid-cols-2 gap-3 items-center">
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 10.png" alt="" />
+              </div>
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 11.png" alt="" />
+              </div>
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 12.png" alt="" />
+              </div>
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 7.png" alt="" />
+              </div>
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 8.png" alt="" />
+              </div>
+              <div class="img rounded-md md:w[200px]">
+                <img src="img/avatar/Frame 9.png" alt="" />
+              </div>
+              <div
+                class="col-span-2 bg-abuabu-10 p-3 flex items-center mx-auto w-full rounded-md border border-abuabu-35 hover:bg-abuabu-35 transisi"
+              >
+                <div class="flex items-center mx-auto gap-3">
+                  <p class="">Go to Personal Training</p>
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-7 w-7 fill-ijo-40"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end profile -->
+    </section>
+    <!-- start service -->
+    <section>
+      <div class="container flex mx-auto items-center flex-col p-3">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="h-[150px] md:h-[200px] flex flex-col w-full p-5"
+          style="background-image: url(img/Text\ Container.png)"
+        >
+          <div class="my-auto">
+            <h2 class="text-testi-title font-semibold text-center">
+              OUR SERVICES
+            </h2>
+            <p class="text-center text-sm">
+              Layanan-layanan ini dirancang untuk memberikan pengalaman belajar
+              Islami yang komprehensif dan mendalam, sekaligus modern dan mudah
+              diakses oleh semua kalangan.
+            </p>
+          </div>
+        </div>
+        <div class="sub-container mt-10 gap-5 grid md:grid-cols-3 grid-cols-1">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            class="card_service card"
+          >
+            <div class="space-y-5">
+              <div class="flex md:flex-col items-center md:items-start gap-5">
+                <div
+                  class="icon-service p-4 bg-gradient-to-br from-[#9dff007b] from-22% to-[#9dff0000] to-50% rounded-md border-2 border-abuabu-15"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-9 w-9 fill-ijo-40"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM117.39,185.92l62-50.55a36,36,0,1,0-51.14-50.23l-43,52.73L45.28,98A88,88,0,1,1,40,128a89.56,89.56,0,0,1,.8-11.88l34.57,34.57a28,28,0,0,0,42,35.23Zm4.19-67.37a36.18,36.18,0,0,0,23.87,23.87l-18.26,14.89a28.11,28.11,0,0,0-20.5-20.5ZM156,128a20,20,0,1,1,20-20A20,20,0,0,1,156,128Zm-56,24a12,12,0,1,1-12,12A12,12,0,0,1,100,152Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h5 class="text-[20px] font-semibold">
+                  Kelas Live dengan Ustadz & Ulama
+                </h5>
+              </div>
+              <p>
+                <span class="text-ijo-40">EL</span> Academy menawarkan kelas
+                interaktif langsung dengan ustadz dan ulama berpengalaman, di
+                mana peserta dapat bertanya langsung, berdiskusi, dan
+                memperdalam pemahaman mereka tentang topik yang diajarkan.
+              </p>
+            </div>
+            <button
+              class="p-5 bg-abuabu-20 w-full rounded-md hover:bg-abuabu-35 transisi"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            class="card_service card"
+          >
+            <div class="space-y-5">
+              <div class="flex md:flex-col items-center md:items-start gap-5">
+                <div
+                  class="icon-service p-4 bg-gradient-to-br from-[#9dff007b] from-22% to-[#9dff0000] to-50% rounded-md border-2 border-abuabu-15"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-9 w-9 fill-ijo-40"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M144,165.68a68,68,0,1,0-71.9,0c-20.65,6.76-39.23,19.39-54.17,37.17a8,8,0,0,0,12.25,10.3C50.25,189.19,77.91,176,108,176s57.75,13.19,77.88,37.15a8,8,0,1,0,12.25-10.3C183.18,185.07,164.6,172.44,144,165.68ZM56,108a52,52,0,1,1,52,52A52.06,52.06,0,0,1,56,108ZM207.36,65.6a108.36,108.36,0,0,1,0,84.8,8,8,0,0,1-7.36,4.86,8,8,0,0,1-7.36-11.15,92.26,92.26,0,0,0,0-72.22,8,8,0,0,1,14.72-6.29ZM248,108a139,139,0,0,1-11.29,55.15,8,8,0,0,1-14.7-6.3,124.43,124.43,0,0,0,0-97.7,8,8,0,1,1,14.7-6.3A139,139,0,0,1,248,108Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h5 class="text-[20px] font-semibold">Konsultasi Syariah</h5>
+              </div>
+              <p>
+                Layanan konsultasi syariah untuk memberikan panduan dalam
+                menjalani kehidupan sesuai dengan ajaran Islam. Ini termasuk
+                konsultasi terkait masalah fiqih, aqidah, atau pertanyaan
+                spesifik terkait kehidupan sehari-hari dalam bingkai syariah.
+              </p>
+            </div>
+
+            <button
+              class="p-5 mt-5 bg-abuabu-20 w-full rounded-md hover:bg-abuabu-35 transisi"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            class="card_service card"
+          >
+            <div class="space-y-5">
+              <div class="flex md:flex-col items-center md:items-start gap-5">
+                <div
+                  class="icon-service p-4 bg-gradient-to-br from-[#9dff007b] from-22% to-[#9dff0000] to-50% rounded-md border-2 border-abuabu-15"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-9 w-9 fill-ijo-40"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M232,72H160a40,40,0,0,0-32,16A40,40,0,0,0,96,72H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V80A8,8,0,0,0,232,72ZM96,192H32V88H96a24,24,0,0,1,24,24v88A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V112a24,24,0,0,1,24-24h64ZM89.6,43.19a48,48,0,0,1,76.8,0,8,8,0,0,1-12.79,9.62,32,32,0,0,0-51.22,0A8,8,0,1,1,89.6,43.19Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h5 class="text-[20px] font-semibold">
+                  Program Hafalan Al-Qur'an Intensif
+                </h5>
+              </div>
+              <p>
+                Program khusus bagi mereka yang ingin fokus pada hafalan
+                Al-Qur'an dengan bimbingan tahfidz yang berpengalaman. Layanan
+                ini mencakup jadwal harian, pemantauan hafalan, dan bimbingan
+                one-on-one.
+              </p>
+            </div>
+
+            <button
+              class="p-5 bg-abuabu-20 w-full rounded-md hover:bg-abuabu-35 transisi"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service -->
+    <!-- start kursus -->
+    <section>
+      <div class="container flex mx-auto items-center flex-col p-3">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="h-[150px] md:h-[200px] flex flex-col w-full p-5"
+          style="background-image: url(img/Text\ Container.png)"
+        >
+          <div class="my-auto">
+            <h2 class="text-testi-title font-semibold text-center">
+              what will be learned
+            </h2>
+            <p class="text-center text-sm">
+              Materi ini dirancang untuk memberikan pembelajaran Islami yang
+              komprehensif, meningkatkan kualitas iman, ilmu, dan amal peserta
+              dengan efektif.
+            </p>
+          </div>
+        </div>
+        <div class="sub-container grid md:grid-cols-2 mt-10 gap-5">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Aqidah
+              </h5>
+              <p class="text-sm text-gray-200">
+                Mempelajari pondasi utama dalam keimanan Islam, termasuk
+                keyakinan terhadap keesaan Allah (tauhid), rukun iman, serta
+                pengenalan mendalam tentang kewajiban beriman. Peserta akan
+                diajak memperkuat keyakinan mereka sehingga menjadi lebih teguh
+                dalam menjalani kehidupan sesuai ajaran Islam.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">
+                    Ust Thufail Al Humaidy
+                  </h6>
+                  <p class="text-sm text-gray-200">Alumni UIM</p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Fiqih
+              </h5>
+              <p class="text-sm text-gray-200">
+                Memberikan pemahaman komprehensif tentang hukum-hukum syariat
+                yang mengatur segala aspek kehidupan Muslim. Dari ibadah seperti
+                shalat, puasa, dan zakat, hingga hubungan muamalah yang meliputi
+                transaksi bisnis dan interaksi sosial, peserta akan dibekali
+                dengan pemahaman praktis tentang bagaimana menjalani kehidupan
+                sehari-hari sesuai dengan hukum Islam.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">Ust Affan Zainy</h6>
+                  <p class="text-sm text-gray-200">Alumni Al Azhar Kairo</p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Tahsin & Tajwid
+              </h5>
+              <p class="text-sm text-gray-200">
+                Program intensif yang dirancang untuk membantu peserta membaca
+                Al-Quran dengan tartil dan tajwid yang benar. Dengan pembinaan
+                yang berkelanjutan, peserta akan mampu membaca dengan lancar dan
+                merasakan keindahan tilawah sesuai kaidah yang diajarkan oleh
+                Rasulullah SAW.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">Ust Ammar Hilmy</h6>
+                  <p class="text-sm text-gray-200">Alumni UIM</p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Tafsir Al-Quran
+              </h5>
+              <p class="text-sm text-gray-200">
+                Menyelami makna ayat-ayat Al-Quran dengan mempelajari tafsir
+                yang autentik. Peserta akan diajak memahami konteks sejarah,
+                sosial, dan spiritual dari setiap wahyu, serta bagaimana
+                menerapkannya dalam kehidupan modern untuk mendapatkan hikmah
+                dari Kalamullah.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">
+                    Ust Mukhammad Asasuddin
+                  </h6>
+                  <p class="text-sm text-gray-200">
+                    Alumni Daarul Hadist Yaman
+                  </p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Tarbiyah
+              </h5>
+              <p class="text-sm text-gray-200">
+                Program pembinaan yang mencakup pengembangan spiritual,
+                intelektual, dan emosional. Peserta diajak memperbaiki diri
+                secara menyeluruh, menguatkan ibadah, karakter, dan peran dalam
+                masyarakat sesuai dengan ajaran Islam.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">Ust Ammar Hilmy</h6>
+                  <p class="text-sm text-gray-200">Alumni UIM</p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="card_dars card"
+          >
+            <div class="space-y-2">
+              <h5 class="text-base text-ijo-70 font-semibold">
+                Pembelajaran Sirah Nabawiyah
+              </h5>
+              <p class="text-sm text-gray-200">
+                Menelusuri perjalanan hidup Rasulullah SAW dari lahir hingga
+                wafat, dengan fokus pada momen-momen penting yang mengandung
+                hikmah luar biasa. Peserta akan memperoleh wawasan tentang
+                perjuangan beliau dalam menyebarkan Islam, dan bagaimana kisah
+                hidupnya bisa diterapkan dalam kehidupan masa kini sebagai
+                teladan sempurna.
+              </p>
+            </div>
+            <div
+              class="card-profil flex md:justify-between p-3 bg-abuabu-15 border border-abuabu-30 items-center"
+            >
+              <div class="flex gap-3 items-center">
+                <img
+                  src="img/avatar/Frame 10.png"
+                  class="h-10 w-10 md:h-14 md:w-14 object-cover"
+                  alt=""
+                />
+                <div class="name-card">
+                  <h6 class="font-semibold text-ijo-80">
+                    Ust Mukhammad Asasuddin
+                  </h6>
+                  <p class="text-sm text-gray-200">
+                    Alumni Daarul Hadist Yaman
+                  </p>
+                </div>
+              </div>
+              <button
+                class="py-2 px-3 rounded-md bg-abuabu-30 hidden md:flex items-center hover:bg-abuabu-40 transisi"
+              >
+                Show Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end kursus -->
+    <!-- start FAQ -->
+    <section>
+      <div class="container flex mx-auto items-center flex-col p-3 gap-8">
+        <div
+          data-aos-duration="1000"
+          data-aos="fade-up"
+          class="h-[150px] md:h-[200px] flex flex-col w-full p-5"
+          style="background-image: url(img/Text\ Container.png)"
+        >
+          <div class="my-auto">
+            <h2 class="text-testi-title font-semibold text-center">
+              Frequently Asked Questions
+            </h2>
+            <p class="text-center text-sm">
+              Still you have any questions? Contact our Team via
+              elacademy@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="box-question flex flex-col gap-3 md:flex-row">
+          <div class="content-question grid md:grid-cols-2 gap-2">
+            <!-- question 1 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apa saja materi yang tersedia di EL Academy?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  EL Academy menyediakan berbagai materi seperti Aqidah, Fiqih,
+                  Tahsin & Tajwid, Tafsir Al-Quran, Hadits, Sirah Nabawiyah,
+                  Akhlaq, serta program Tarbiyah Islami.
+                </p>
+              </div>
+            </div>
+            <!-- question 2 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apakah saya bisa belajar secara fleksibel?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Ya, EL Academy menawarkan pembelajaran online yang bisa
+                  diakses kapan saja dan di mana saja sesuai kenyamanan Anda.
+                </p>
+              </div>
+            </div>
+            <!-- question 3 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Siapa saja pengajar di EL Academy?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Pengajar kami adalah ustadz, ulama, dan ahli di bidangnya
+                  dengan pengalaman dan pemahaman mendalam tentang ilmu-ilmu
+                  Islam.
+                </p>
+              </div>
+            </div>
+            <!-- question 4 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apakah tersedia kelas untuk semua usia?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Iya, kami menyediakan kelas yang cocok untuk berbagai usia,
+                  mulai dari remaja hingga dewasa, sehingga semua bisa belajar
+                  sesuai kebutuhan mereka.
+                </p>
+              </div>
+            </div>
+            <!-- question 5 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Bagaimana cara mendaftar kelas di EL Academy?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Anda dapat mendaftar melalui website kami dengan mengklik
+                  tombol "Daftar" dan mengisi formulir yang tersedia.
+                  Pendaftaran juga memerlukan email dan nomor kontak aktif.
+                </p>
+              </div>
+            </div>
+            <!-- question 6 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apakah bisa konsultasi langsung dengan pengajar?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Kami menyediakan layanan konsultasi syariah serta kesempatan
+                  untuk berdiskusi langsung dengan pengajar melalui sesi live
+                  atau pesan.
+                </p>
+              </div>
+            </div>
+            <!-- question 7 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Berapa biaya untuk mengikuti kursus di EL Academy?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Biaya kursus bervariasi tergantung jenis dan level program.
+                  Informasi biaya dapat dilihat pada halaman kursus atau melalui
+                  kontak admin kami.
+                </p>
+              </div>
+            </div>
+            <!-- question 8 -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              class="question"
+            >
+              <div class="icon-question flex items-center justify-between">
+                <h3 class="font-semibold text-base">
+                  Apakah materi bisa diunduh?
+                </h3>
+                <button class="btn-quest" onclick="toggleAnswer(this)">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    class="w-5 h-5 fill-white"
+                  >
+                    <path
+                      d="M50.34,117.66a8,8,0,0,1,11.32-11.32L120,164.69V32a8,8,0,0,1,16,0V164.69l58.34-58.35a8,8,0,0,1,11.32,11.32l-72,72a8,8,0,0,1-11.32,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer flex flex-col gap-3">
+                <div class="garis"></div>
+                <p class="text-sm">
+                  Sebagian materi disediakan untuk diunduh dan dipelajari
+                  offline. Namun, beberapa materi mungkin hanya bisa diakses
+                  secara online demi menjaga hak cipta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end FAQ -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="container flex mx-auto items-center flex-col p-3 gap-8">
+        <div
+          class="flex flex-col md:flex-row justify-between w-full items-center gap-4 border-y border-abuabu-15 py-4"
+        >
+          <div class="company flex items-center">
+            <div class="logo w-12 h-12">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <h4 class="text-xl font-semibold">
+              <span class="text-ijo-50">EL</span> ACADEMY
+            </h4>
+          </div>
+          <div class="menu">
+            <ul class="flex gap-2 flex-wrap justify-center">
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="service.html">Coursous</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="partner.html">Partner</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="sosmed border border-abuabu-15 px-3 py-2 flex md:flex-row flex-col items-center gap-2 w-full md:w-fit rounded-md"
+          >
+            <p class="">Stay Connected</p>
+            <div class="flex items-center mx-auto gap-3">
+              <!-- Instagram Icon with Tooltip -->
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="relative group ig p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Instagram
+                </span>
+              </a>
+
+              <!-- YouTube Icon with Tooltip -->
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                class="relative group yt p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  YouTube
+                </span>
+              </a>
+
+              <!-- Facebook Icon with Tooltip -->
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="relative group fb p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Facebook
+                </span>
+              </a>
+
+              <!-- Linkedin Icon with Tooltip -->
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="relative group fb p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-40"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                  />
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Linkedin
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-row flex-col md:justify-between items-center w-full"
+        >
+          <div class="hub flex flex-col md:flex-row gap-2">
+            <div
+              class="email flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">elacademy@gmail.com</p>
+            </div>
+            <div
+              class="telp flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">+62-87755229065</p>
+            </div>
+            <div
+              class="email flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M124,175a8,8,0,0,0,7.94,0c2.45-1.41,60-35,60-94.95A64,64,0,0,0,64,80C64,140,121.58,173.54,124,175ZM128,56a24,24,0,1,1-24,24A24,24,0,0,1,128,56ZM240,184c0,31.18-57.71,48-112,48S16,215.18,16,184c0-14.59,13.22-27.51,37.23-36.37a8,8,0,0,1,5.54,15C42.26,168.74,32,176.92,32,184c0,13.36,36.52,32,96,32s96-18.64,96-32c0-7.08-10.26-15.26-26.77-21.36a8,8,0,0,1,5.54-15C226.78,156.49,240,169.41,240,184Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">Lumajang</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="text-gray-400">© 2024 ElAcademy. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <button class="icon p-3 bg-[#00FF9C50] z-50 fixed right-5 bottom-5">
+      <a href="#navbar"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 fill-ijo-40"
+          viewBox="0 0 320 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192l72 0 0 288c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-288 72 0c9.6 0 18.2-5.7 22-14.5z"
+          /></svg
+      ></a>
+    </button>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

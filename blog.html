@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog El Academy</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-abuabu-10 text-white">
+    <!-- navbar section -->
+    <header id="navbar">
+      <nav
+        class="py-4 px-6 flex justify-between relative border-b border-abuabu-45 bg-abuabu-10"
+      >
+        <div class="flex items-center gap-3">
+          <div class="logo h-7 w-7 md:h-8 md:w-8">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <h4 class="md:text-xl text-[12px] font-semibold">
+            <span class="text-ijo-50">EL</span> ACADEMY
+          </h4>
+        </div>
+        <ul class="md:flex gap-2 items-center hidden">
+          <li class="py-[10px] px-[20px] hover:bg-abuabu-15 rounded-md">
+            <a href="index.html">Home</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="about.html">About Us</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="service.html">Services</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="coursous.html">Coursous</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="partner.html">Partner</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md bg-abuabu-15 transisi"
+          >
+            <a href="blog.html">Blog</a>
+          </li>
+          <li
+            class="py-[10px] px-[20px] rounded-md hover:bg-abuabu-15 transisi"
+          >
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="bg-ijo-50 py-[12px] md:flex hidden px-[22px] rounded-xl hover:bg-ijo-40 transisi"
+        >
+          <a href="daftar.html" class="text-abuabu-15 font-semibold">Masuk | Daftar</a>
+        </button>
+        <!-- btn mobile / humburger -->
+        <button
+          id="menubtn"
+          class="p-[10px] bg-abuabu-15 rounded-md md:hidden hover:bg-abuabu-20 transisi"
+        >
+          <svg
+            class="h-6 w-6 fill-ijo-70"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6.75C3 6.33579 3 6 3.75 6H20.25C20.6642 6 21 6.33579 21 6.75C21 7.16421 20.6642 7.5 20.25 7.5H3.75C3.33579 7.5 3 7.16421 3 6.75ZM3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12ZM11.25 17.25C11.25 16.8358 11.5858 16.5 12 16.5H20.25C20.6642 16.5 21 16.8358 21 17.25C21 17.6642 20.6642 18 20.25 18H12C11.5858 18 11.25 17.6642 11.25 17.25Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <!-- navbar mobile -->
+        <aside
+          id="mobileMenu"
+          class="md:hidden absolute left-0 right-0 top-full text-white bg-abuabu-15 space-y-2 p-4 transform scale-y-0 origin-top transisi duration-700"
+        >
+          <ul class="flex flex-col text-center w-full gap-3">
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="about.html">About Us</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="service.html">Services</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="coursous.html">Coursous</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="partner.html">Partner</a>
+            </li>
+            <li
+              class="bg-ijo-60 py-3 px-5 rounded-md text-abuabu-10 hover:bg-ijo-40 transisi"
+            >
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="bg-ijo-40 py-3 px-5 rounded-md hover:bg-ijo-60 transisi">
+              <a href="contact.html" class="text-abuabu-15 font-semibold"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </nav>
+    </header>
+    <!-- end navbar section -->
+    <!-- Header Section -->
+    <div class="container flex mx-auto items-center flex-col p-3">
+      <div
+        class="h-[150px] md:h-[200px] flex flex-col w-full p-5"
+        style="background-image: url(img/Text\ Container.png)"
+      >
+        <div class="my-auto">
+          <h2 class="text-testi-title font-semibold text-center">
+            OUR BLOG
+          </h2>
+          <p class="text-center text-sm">
+            Discover insights, tips, and lessons in Islamic studies and education
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto px-4 lg:px-0 f">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Blog Posts Section -->
+        <section class="w-full lg:w-3/4 space-y-5 p-3">
+          <article
+            class="bg-abuabu-20 shadow-lg shadow-[#00FF9C50] rounded-lg overflow-hidden"
+          >
+            <img
+              src="img/carousel/ngoding.png"
+              alt="Blog Image"
+              class="w-full h-72 object-cover"
+            />
+            <div class="p-6">
+              <h2 class="text-2xl font-semibold mb-2 md:w-3/4">
+                Langkah-langkah yang Harus Dilakukan Sebelum Memulai Menghafal
+                Al-Qur'an
+              </h2>
+              <p class="text-sm text-gray-300 mb-4">October 10, 2024</p>
+              <p class="text-gray-200 mb-4">
+                Menghafal Al-Qur'an adalah impian setiap Muslim yang mendambakan
+                pahala dan keberkahan. Untuk mencapainya, diperlukan
+                <span class="font-semibold">komitmen</span>,
+                <span class="font-semibold">usaha</span>, dan
+                <span class="font-semibold">panduan yang tepat</span>. Berikut
+                langkah-langkah praktis yang dapat membantu dalam memulai
+                hafalan Al-Qur'an, lengkap dengan dalilnya:
+              </p>
+              <ul class="list-disc pl-5 text-gray-200">
+                <li class="mb-3">
+                  <span class="font-semibold">Memperbaiki Niat</span>: Pastikan
+                  niat menghafal adalah semata-mata karena Allah, bukan untuk
+                  tujuan duniawi. Dengan niat yang ikhlas, perjalanan ini akan
+                  lebih mudah dan penuh berkah.<br />
+                  <em>Dalil</em>: "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ" (HR.
+                  Bukhari dan Muslim)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold"
+                    >Membersihkan Hati dari Penyakit Hati</span
+                  >: Hati yang bersih lebih mudah menerima cahaya Al-Qur'an.
+                  Sebelum menghafal, jauhi iri, dengki, dan kemaksiatan.<br />
+                  <em>Dalil</em>: "قَدْ أَفْلَحَ مَن زَكَّاهَا" (QS. Asy-Syams:
+                  9)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold"
+                    >Bertaubat dan Memperbanyak Dzikir</span
+                  >: Bertaubat dan banyak berdzikir menenangkan hati, memudahkan
+                  hafalan.<br />
+                  <em>Dalil</em>: "وَتُوبُوا إِلَى اللَّهِ جَمِيعًا أَيُّهَا
+                  الْمُؤْمِنُونَ" (QS. An-Nur: 31)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold">Memilih Lingkungan yang Baik</span
+                  >: Lingkungan yang mendukung akan memotivasi kita dalam
+                  menghafal Al-Qur'an.<br />
+                  <em>Dalil</em>: "الْمَرْءُ عَلَى دِينِ خَلِيلِهِ" (HR. Abu
+                  Dawud dan Tirmidzi)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold">Mempersiapkan Jadwal Khusus</span
+                  >: Konsistensi adalah kunci. Buat jadwal khusus, seperti
+                  menghafal setelah subuh atau sebelum tidur.<br />
+                  <em>Dalil</em>: "أَحَبُّ الْأَعْمَالِ إِلَى اللَّهِ
+                  أَدْوَمُهَا وَإِنْ قَلَّتْ" (HR. Bukhari dan Muslim)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold">Mempelajari Tajwid Dasar</span>:
+                  Bacaan yang benar membantu hafalan menjadi lebih mudah dan
+                  berkualitas.<br />
+                  <em>Dalil</em>: "وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا" (QS.
+                  Al-Muzzammil: 4)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold">Mencari Guru atau Pembimbing</span
+                  >: Guru membantu memperbaiki kesalahan bacaan dan memberikan
+                  metode yang tepat.<br />
+                  <em>Dalil</em>: "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ
+                  وَعَلَّمَهُ" (HR. Bukhari)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold"
+                    >Bersabar dan Menyadari Pentingnya Proses</span
+                  >: Menghafal adalah proses panjang yang membutuhkan
+                  kesabaran.<br />
+                  <em>Dalil</em>: "وَاصْبِرْ فَإِنَّ اللَّهَ لَا يُضِيعُ أَجْرَ
+                  الْمُحْسِنِينَ" (QS. Hud: 115)
+                </li>
+                <li class="mb-3">
+                  <span class="font-semibold">Membulatkan Tekad</span>: Tekad
+                  yang kuat akan membuka jalan, membuat kita mampu menghadapi
+                  tantangan.<br />
+                  <em>Pepatah</em>: "إِذَا صَدَقَ الْعَزْمُ وَضَحَ السَّبِيلُ"
+                </li>
+              </ul>
+              <p class="text-gray-200 mt-4">
+                Dengan niat tulus, hati yang bersih, lingkungan yang baik, dan
+                bimbingan guru, perjalanan menghafal akan lebih lancar. Semoga
+                Allah memudahkan langkah kita semua dalam menjaga firman-Nya.
+              </p>
+              <a href="#" class="text-green-600 font-semibold hover:underline"
+                >Read more...</a
+              >
+            </div>
+          </article>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Blog Post Card -->
+            <article class="bg-abuabu-20 rounded-lg overflow-hidden shadow-lg shadow-[#00FF9C50]">
+              <img
+                src="img/carousel/ngoding.png"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-semibold mb-2">
+                  The Importance of Aqidah in Daily Life
+                </h2>
+                <p class="text-sm text-gray-300 mb-4">October 10, 2024</p>
+                <p class="text-gray-200 mb-4">
+                  Aqidah forms the foundation of a Muslim’s life. This article
+                  dives into how strengthening one's faith can positively impact
+                  daily activities.
+                </p>
+                <a href="#" class="text-green-600 font-semibold hover:underline"
+                  >Read more...</a
+                >
+              </div>
+            </article>
+            <!-- Blog Post Card -->
+            <article class="bg-abuabu-20 rounded-lg overflow-hidden shadow-lg shadow-[#00FF9C50]">
+              <img
+                src="img/carousel/ngoding.png"
+                alt="Blog Image"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h2 class="text-2xl font-semibold mb-2">
+                  Learning Tafsir: A Guide for Beginners
+                </h2>
+                <p class="text-sm text-gray-300 mb-4">October 5, 2024</p>
+                <p class="text-gray-200 mb-4">
+                  Understanding the Quran through Tafsir is essential for deeper
+                  insight. This guide is designed to help beginners start their
+                  journey.
+                </p>
+                <a href="#" class="text-green-600 font-semibold hover:underline"
+                  >Read more...</a
+                >
+              </div>
+            </article>
+            <!-- Add more blog cards as needed -->
+          </div>
+        </section>
+
+        <!-- Sidebar Section -->
+        <!-- Sidebar Section -->
+        <aside class="w-full lg:w-1/4 space-y-8">
+          <!-- Author Section -->
+          <div class="bg-abuabu-20 shadow-lg rounded-lg p-6 space-y-3">
+            <h3 class="text-xl font-semibold mb-4">Penulis</h3>
+            <div class="img-profil w-20 h-20 rounded-full object-cover overflow-hidden border-4">
+              <img
+                src="img/profil/profil1.png"
+                alt="Author"
+                class=""
+              />
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <div>
+                <h4 class="text-lg font-semibold">Ustadz Asasuddin</h4>
+                <p class="text-gray-200 text-sm">
+                  Seorang pendakwah dan pengajar lulusan daarul hadits yaman
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories with Article Titles -->
+          <div class="bg-abuabu-20 shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Categories</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-green-600 font-semibold"
+                  >Aqidah</a
+                >
+                <ul
+                  class="ml-4 mt-1 space-y-1 text-gray-300 text-sm list-disc pl-5"
+                >
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >The Essence of Tawhid</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >The Concept of Iman in Islam</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Understanding the Pillars of Faith</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-green-600 font-semibold"
+                  >Tafsir</a
+                >
+                <ul
+                  class="ml-4 mt-1 space-y-1 text-gray-300 text-sm list-disc pl-5"
+                >
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Understanding Surah Al-Fatihah</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Tafsir of Surah Al-Ikhlas</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Lessons from Surah Yusuf</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-green-600 font-semibold"
+                  >Fiqh</a
+                >
+                <ul
+                  class="ml-4 mt-1 space-y-1 text-gray-300 text-sm list-disc pl-5"
+                >
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >The Essentials of Prayer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Fasting: Rules and Rewards</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Understanding Zakat</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-green-600 font-semibold"
+                  >Tahsin</a
+                >
+                <ul
+                  class="ml-4 mt-1 space-y-1 text-gray-300 text-sm list-disc pl-5"
+                >
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Introduction to Tajweed</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Mastering Makharij</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Improving Pronunciation in Recitation</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-green-600 font-semibold"
+                  >Islamic History</a
+                >
+                <ul
+                  class="ml-4 mt-1 space-y-1 text-gray-300 text-sm list-disc pl-5"
+                >
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >The Life of Prophet Muhammad (SAW)</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Notable Sahabah in Islam</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-green-600"
+                      >Significant Battles in Islamic History</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="bg-abuabu-20 shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4">Recent Posts</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-200 hover:text-green-600"
+                  >Strengthening Your Faith</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-200 hover:text-green-600"
+                  >How to Memorize the Quran Effectively</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-200 hover:text-green-600"
+                  >Building Islamic Character in Children</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+     <!-- start footer -->
+    <footer>
+      <div class="container flex mx-auto items-center flex-col p-3 gap-8">
+        <div
+          class="flex flex-col md:flex-row justify-between w-full items-center gap-4 border-y border-abuabu-15 py-4"
+        >
+          <div class="company flex items-center">
+            <div class="logo w-12 h-12">
+              <img src="img/logo.png" alt="" />
+            </div>
+            <h4 class="text-xl font-semibold">
+              <span class="text-ijo-50">EL</span> ACADEMY
+            </h4>
+          </div>
+          <div class="menu">
+            <ul class="flex gap-2 flex-wrap justify-center">
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="service.html">Services</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="service.html">Coursous</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="partner.html">Partner</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="p-2 hover:text-ijo-50 transisi">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="sosmed border border-abuabu-15 px-3 py-2 flex md:flex-row flex-col items-center gap-2 w-full md:w-fit rounded-md"
+          >
+            <p class="">Stay Connected</p>
+            <div class="flex items-center mx-auto gap-3">
+              <!-- Instagram Icon with Tooltip -->
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="relative group ig p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Instagram
+                </span>
+              </a>
+
+              <!-- YouTube Icon with Tooltip -->
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                class="relative group yt p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-73.74,65-40,28A8,8,0,0,1,108,156V100a8,8,0,0,1,12.59-6.55l40,28a8,8,0,0,1,0,13.1Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  YouTube
+                </span>
+              </a>
+
+              <!-- Facebook Icon with Tooltip -->
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="relative group fb p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5 fill-ijo-60"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z"
+                  ></path>
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Facebook
+                </span>
+              </a>
+
+              <!-- Linkedin Icon with Tooltip -->
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="relative group fb p-3 bg-gradient-to-b from-abuabu-20 to-abuabu-10 rounded-md"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-ijo-40" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                  />
+                </svg>
+                <span
+                  class="tooltip opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#00FF9C50] transisi text-white text-xs px-2 py-1 rounded-md"
+                >
+                  Linkedin
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex md:flex-row flex-col md:justify-between items-center w-full"
+        >
+          <div class="hub flex flex-col md:flex-row gap-2">
+            <div
+              class="email flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">elacademy@gmail.com</p>
+            </div>
+            <div
+              class="telp flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,231.88,175.08Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">+62-87755229065</p>
+            </div>
+            <div
+              class="email flex gap-2 border-b border-abuabu-15 py-4 md:border-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 fill-ijo-40"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M124,175a8,8,0,0,0,7.94,0c2.45-1.41,60-35,60-94.95A64,64,0,0,0,64,80C64,140,121.58,173.54,124,175ZM128,56a24,24,0,1,1-24,24A24,24,0,0,1,128,56ZM240,184c0,31.18-57.71,48-112,48S16,215.18,16,184c0-14.59,13.22-27.51,37.23-36.37a8,8,0,0,1,5.54,15C42.26,168.74,32,176.92,32,184c0,13.36,36.52,32,96,32s96-18.64,96-32c0-7.08-10.26-15.26-26.77-21.36a8,8,0,0,1,5.54-15C226.78,156.49,240,169.41,240,184Z"
+                ></path>
+              </svg>
+              <p class="hover:text-ijo-50 transisi">Lumajang</p>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="text-gray-400">© 2024 ElAcademy. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+     <button class="icon p-3 bg-[#00FF9C50] z-50 fixed right-5 bottom-5">
+      <a href="#navbar"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 fill-ijo-40"
+          viewBox="0 0 320 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192l72 0 0 288c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-288 72 0c9.6 0 18.2-5.7 22-14.5z"
+          /></svg
+      ></a>
+    </button>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
